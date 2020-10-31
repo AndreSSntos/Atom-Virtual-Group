@@ -1,0 +1,84 @@
+body {
+    position: relative;
+    width: 1152px;
+    height: 651px;
+    background: linear-gradient(180deg, #8A2BE2 , #020202 87.63%);
+}
+
+#voltar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 189px;
+    top: 32px;
+}
+
+#mundo {
+    position: absolute;
+    width: 530px;
+    height: 530px;
+    left: 697px;
+    top: 75px;
+}
+
+#atom {
+    position: absolute;
+    width: 183px;
+    height: 85px;
+    left: 189px;
+    top: 170px;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 85px;
+    color: #FFFFFF;
+}
+
+#atom-dois {
+    position: absolute;
+    width: 412px;
+    height: 24px;
+    left: 189px;
+    top: 286px;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#cadastrar {
+    position: absolute;
+    width: 203px;
+    height: 70px;
+    left: 183px;
+    top: 382px;
+    background: linear-gradient(180deg, #BD80E1 14.06%, #000000 100%);
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Fredoka One;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#login{
+position: absolute;
+width: 203px;
+height: 70px;
+left: 407px;
+top: 382px;
+background: linear-gradient(180deg, #BD80E1 0%, #000000 100%);
+border-radius: 50px;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+font-family: Fredoka One;
+color: #FFFFFF;
+cursor: pointer;
+}
