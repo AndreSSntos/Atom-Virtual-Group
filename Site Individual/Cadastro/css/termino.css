@@ -1,0 +1,258 @@
+body {
+    position: relative;
+    width: 1152px;
+    height: 651px;
+    background: linear-gradient(180deg, #8A2BE2 , #020202 87.63%);
+    font-family: 'Fredoka One', cursive;
+}
+
+#voltar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 189px;
+    top: 32px;
+}
+#atom {
+    position: absolute;
+    width: 120px;
+    height: 36px;
+    left: 805px;
+    border-radius: 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'Fredoka One', cursive;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #1c1c1c;
+}
+
+#campeao {
+    position: absolute;
+    width: 379px;
+    height: 379px;
+    left: 727px;
+    top: 95px;
+}
+
+#escolha {
+    position: absolute;
+    width: 683px;
+    height: 85px;
+    left: 189px;
+    top: 50px;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 85px;
+    color: #FFFFFF;
+}
+
+#escolha-dois {
+    position: absolute;
+    width: 412px;
+    height: 24px;
+    left: 189px;
+    top: 236px;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#programacao input{
+    position: absolute;
+    width: 100px;
+}
+
+main{
+    text-align: center;
+    font-size: 100px;
+}
+
+.programacao-botao{
+    position: absolute;
+    left: -99999999px;
+}
+
+.programacao-button{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    top: 350px;
+    left: 180px;
+}
+
+
+
+.programacao-button::before,
+.programacao-button::after{
+    content: "";
+    transition: all 0.1s ease;
+
+}
+
+.programacao-button::before{
+    display: inline-block;
+    width: 150px;
+    height: 120px;
+    background: #1c1c1c;
+    border-radius: 10px;
+}
+
+.programacao-button::after{
+    background: transparent;
+  
+}
+
+.programacao-botao:checked + .programacao-button::before{
+    background: linear-gradient(180deg, #8A2BE2 , #020202 87.63%);
+}
+
+.programacao-botao:checked + .programacao-button::after{
+    left: 0.60em;
+}
+
+/* a */
+
+.video-botao{
+    position: absolute;
+    left: -99999999px;
+}
+
+.video-button{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    top: 350px;
+    left:350px;
+}
+
+
+
+.video-button::before,
+.video-button::after{
+    content: "";
+    transition: all 0.1s ease;
+
+}
+
+.video-button::before{
+    display: inline-block;
+    width: 150px;
+    height: 120px;
+    background: #1c1c1c;
+    border-radius: 10px;
+}
+
+.video-button::after{
+    background: transparent;
+  
+}
+
+.video-botao:checked + .video-button::before{
+    background: linear-gradient(180deg, #8A2BE2 , #020202 87.63%);
+}
+
+.video-botao:checked + .video-button::after{
+    left: 0.60em;
+}
+
+/* a */
+
+.dj-botao{
+    position: absolute;
+    left: -99999999px;
+}
+
+.dj-button{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    top: 350px;
+    left: 520px;
+}
+
+
+
+.dj-button::before,
+.dj-button::after{
+    content: "";
+    transition: all 0.1s ease;
+
+}
+
+.dj-button::before{
+    display: inline-block;
+    width: 150px;
+    height: 120px;
+    background: #1c1c1c;
+    border-radius: 10px;
+}
+
+.dj-button::after{
+    background: transparent;
+  
+}
+
+.dj-botao:checked + .dj-button::before{
+    background: linear-gradient(180deg, #8A2BE2 , #020202 87.63%);
+}
+
+.dj-botao:checked + .dj-button::after{
+    left: 0.60em;
+}
+
+#videoimg{
+    position: absolute;
+    top: 360px;
+    left:375px;
+}
+
+#vtext{
+    position: absolute;
+    top: 470px;
+    left: 365px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#planet{
+    position: absolute;
+    top: 360px;
+    left: 205px;
+
+}
+
+#ptext{
+    position: absolute;
+    top: 470px;
+    left: 195px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#musica{
+    position: absolute;
+    top: 360px;
+    left: 545px;
+}
+
+#mtext{
+    position: absolute;
+    top: 470px;
+    left: 510px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
