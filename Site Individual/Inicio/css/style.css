@@ -2,7 +2,7 @@ body {
     position: relative;
     width: 1152px;
     height: 651px;
-    background: linear-gradient(180deg, #8A2BE2 , #020202 87.63%);
+    background: linear-gradient(180deg, #8A2BE2 0%, #000000 100%), #1C1C1C;
 }
 
 #voltar {
@@ -55,8 +55,8 @@ body {
     height: 70px;
     left: 183px;
     top: 382px;
-    background: linear-gradient(180deg, #BD80E1 14.06%, #000000 100%);
-    border-radius: 50px;
+    background: #8A2BE2;
+    border-radius: 40px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -72,8 +72,8 @@ width: 203px;
 height: 70px;
 left: 407px;
 top: 382px;
-background: linear-gradient(180deg, #BD80E1 0%, #000000 100%);
-border-radius: 50px;
+background: #8A2BE2;
+border-radius: 40px;
 font-style: normal;
 font-weight: normal;
 font-size: 20px;

@@ -1,0 +1,83 @@
+*{
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    position: relative;
+    width: 1152px;
+    height: 651px;
+    background:#000000;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+
+.container {
+    position: absolute;
+    width: 580px;
+    height: 450px;
+    top: 15%;
+    left: 33.3%;
+    background: linear-gradient(180deg, #8A2BE2 25.52%, #000000 100%);
+    border-radius: 20px;
+}
+
+
+
+#linha {
+    position: absolute;
+    width: 85px;
+    height: 7px;
+    left: 79px;
+    top: 40px;
+    background: #FFFFFF;
+}
+
+h2 {
+    position: absolute;
+    width: 366px;
+    height: 24px;
+    left: 180px;
+    top: 15px;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#texto{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 20px;
+    top: 125px;
+    left: 80px;
+    width: 427px;
+}
+
+img{
+    position: absolute;
+    top: 200px;
+    left: 225px;
+}
+
+
+
+
+#login{
+    position: absolute;
+width: 203px;
+height: 70px;
+left: 190px;
+top: 389px;
+color: #FFFFFF;
+font-family: Fredoka One;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+background: #8A2BE2;
+border-radius: 30px;
+cursor: pointer;
+}

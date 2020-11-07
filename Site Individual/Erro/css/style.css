@@ -1,0 +1,13 @@
+html{
+
+    font-family: 'Fredoka One', cursive;
+    background-color: #8356C9;
+}
+
+
+#back{
+    width:1099px;
+    height: 647px;
+    position: absolute;
+    left: 125px;
+}

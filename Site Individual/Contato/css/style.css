@@ -1,0 +1,254 @@
+body {
+    position: relative;
+    width: 1152px;
+    height: 651px;
+background: linear-gradient(180deg, #1C1C1C 78.65%, #8A2BE2 100%);
+    font-family: 'Fredoka One', cursive;
+}
+
+
+#logo{
+    width: 354px;
+    height: 358px;
+    position: absolute;
+    top: 105px;
+    left: 118px;
+}
+
+h1{
+    color: #ffffff;
+    position: absolute;
+    top: 200px;
+    left: 375px;
+    font-size: 70px;
+}
+
+h2{
+    position: absolute;
+    top: 330px;
+    left: 375px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+#seta {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 189px;
+    top: 32px;
+}
+
+.container{
+    
+position: absolute;
+width: 433px;
+height: 585px;
+left: 800px;
+top: 37px;
+
+background: #FFFFFF;
+border-radius: 20px;
+}
+
+.wrapper{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 5px;
+  
+    font-family: 'Fredoka One', cursive;
+  }
+  
+  .wrapper .title h1{
+    color: #1c1c1c;
+    text-align: center;
+    margin-bottom: 25px;
+    position: absolute;
+    font-size: 20px;
+    top: -100px;
+    left: 145px;
+  }
+  
+  .contact-form{
+    display: flex;
+  }
+  
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .input-fields,
+  .msg{
+    width: 48%;
+  }
+  
+  .input-fields .input,
+  .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #1c1c1c;
+    padding: 10px;
+    color: #1c1c1c;
+    width: 100%;
+  }
+  
+  .msg textarea{
+    height: 212px;
+  }
+  
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #1c1c1c;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #1c1c1c;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #1c1c1c;
+  }
+  
+  .btn {
+      position: absolute;
+      top: 370px;
+      left: 310px;
+      width: 173px;
+      background:#8A2BE2;
+      text-align: center;
+      padding: 15px;
+      border-radius: 50px;
+      color: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-family: 'Fredoka One', cursive;
+  }
+
+  #nome{
+      position: absolute;
+      top: -30px;
+      width: 354px;
+      left: 60px;
+      font-size: 20px;
+      font-family: 'Fredoka One', cursive;
+      color: #8A2BE2;
+  }
+
+  #email{
+    position: absolute;
+    top: 0;
+    width: 354px;
+    left: 60px;
+    top: 60px;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    color: #8A2BE2;
+  }
+
+  #telefone{
+    position: absolute;
+    width: 354px;
+    left: 60px;
+    top: 150px;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    color: #8A2BE2;
+  }
+
+  #mensagem{
+    position: absolute;
+    width: 354px;
+    height: 80px;
+    left: 60px;
+    top: 220px;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    color: #8A2BE2;
+  }
+  
+  .footer{
+      position: absolute;
+      top: 550px;
+      color: #ffffff;
+      font-size: 15px;
+  }
+
+  #end{
+      position: absolute;
+    left: 200px;
+}
+
+#rua{
+    position: absolute;
+    left: 200px;
+    top: 30px;
+    width: 100px;
+height: 24px;
+color: #BD80E1;
+font-size: 10px;
+}
+
+#cont{
+    position: absolute;
+    left: 400px;
+}
+
+#em{
+    position: absolute;
+    left: 400px;
+    top: 30px;
+    width: 100px;
+height: 24px;
+color: #BD80E1;
+font-size: 10px;
+}
+
+#num{
+    position: absolute;
+    left: 400px;
+    top: 50px;
+    width: 100px;
+height: 24px;
+color: #BD80E1;
+font-size: 10px;
+}
+
+#rede{
+    position: absolute;
+    left: 600px;
+    width: 108px;
+}
+
+#git{
+    position: absolute;
+    left: 610px;
+    top: 30px;
+}
+
+#linkedin{
+    position: absolute;
+    left: 650px;
+    top: 30px;
+}
+
+
+  @media screen and (max-width: 600px){
+    .contact-form{
+      flex-direction: column;
+    }
+    .msg textarea{
+      height: 80px;
+    }
+    .input-fields,
+    .msg{
+      width: 100%;
+    }
+  }

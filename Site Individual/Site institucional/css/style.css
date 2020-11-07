@@ -1,5 +1,5 @@
 body {
-    background: rgba(0, 0, 0, 0.95);
+    background: linear-gradient(180deg, #000000 90.62%, #8A2BE2 100%), rgba(0, 0, 0, 0.95);
     font-family: 'Fredoka One', cursive;
     height: 3600px;
 }
@@ -39,6 +39,9 @@ body {
     padding: 40px 40px 40px 40px;
     font-size: 15px;
     color: #ffffff;
+    position: absolute;
+    top: -35px;
+   left: 220px;
 }
 
 .menu a {
@@ -47,6 +50,7 @@ body {
 }
 
 .menu #login {
+    left: 330px;
     color: #8A2BE2;
 }
 
