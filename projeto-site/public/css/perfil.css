@@ -1,0 +1,314 @@
+* {
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    position: relative;
+    width: 1152px;
+    height: 700px;
+    background: rgba(0, 0, 0, 0.93);
+}
+
+.header {
+    position: fixed;
+}
+
+.header ul li {
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+}
+
+#logo {
+    position: absolute;
+    left: 47px;
+    top: 13px;
+    width: 100px;
+    height: 100px;
+}
+
+#casa {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 40px;
+    top: 157px;
+}
+
+#perfil {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 40px;
+    top: 276px;
+}
+
+#aviao {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 40px;
+    top: 388px;
+}
+
+hr {
+    position: absolute;
+    width: 768px;
+    height: 0px;
+    left: -180px;
+    top: 350px;
+    border: 1px solid rgba(28, 28, 28, 0.86);
+    transform: rotate(90deg);
+}
+
+#sair {
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+    width: 43px;
+    height: 18px;
+    left: 80px;
+    top: 613px;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+#barra {
+    position: absolute;
+    width: 5px;
+    height: 56px;
+    left: 198px;
+    top: 283px;
+    background: #8A2BE2;
+    border-radius: 20px;
+}
+
+#capa {
+    position: absolute;
+    width: 859px;
+    height: 166px;
+    left: 315px;
+    top: 29px;
+    border-radius: 20px;
+}
+
+#perfilavatar {
+    position: absolute;
+    width: 79px;
+    height: 80.4px;
+    left: 400px;
+    top: 160px;
+    background: #8A2BE2;
+    border-radius: 50px;
+}
+
+.avatar {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+
+#nome {
+    position: absolute;
+    left: 490px;
+    top: 160px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#verificacao {
+    position: absolute;
+    left: 590px;
+    top: 195px;
+}
+
+#arroba {
+    position: absolute;
+    left: 490px;
+    top: 200px;
+    color: rgba(255, 255, 255, 0.49);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.seguidores {
+    position: absolute;
+    left: 890px;
+    top: 185px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+#numeroseguindo {
+    font-size: 15px;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+
+#seguidores {
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+#numeroseguidores {
+    position: absolute;
+    left: 145px;
+    top: 20px;
+    font-size: 15px;
+}
+
+.tags {
+    position: absolute;
+    left: 315px;
+    top: 269px;
+}
+
+#tags {
+    color: #8A2BE2;
+    font-size: 20px;
+}
+
+#tag1 {
+    position: absolute;
+    width: 90px;
+    height: 18px;
+    left: 0;
+    top: 50px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+#tag2 {
+    position: absolute;
+    width: 90px;
+    height: 18px;
+    left: 100px;
+    top: 50px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+#tag3 {
+    position: absolute;
+    width: 90px;
+    height: 18px;
+    left: 200px;
+    top: 50px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.postagens {
+    position: absolute;
+    top: 350px;
+    left: 350px;
+}
+
+#postagens {
+    color: #8A2BE2;
+    font-size: 20px;
+}
+
+.pub {
+    position: absolute;
+    width: 815px;
+    height:200px;
+    left: 0;
+    top: 65px;
+    background: #1C1C1C;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
+
+#postar{
+    border-radius: 20px;
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: absolute;
+    left: 750px;
+    top: 250px;
+    width: 100px;
+    height:  40px;
+}
+
+.post {
+    position: absolute;
+    width: 815px;
+    height: 200px;
+    left: 0;
+    top: 320px;
+    background: #1C1C1C;
+    border-radius: 30px;
+}
+
+#conteudopost{
+    position: absolute;
+    left: 30px;
+    color: #FFFFFF;
+}
+
+
+.amei {
+    position: absolute;
+    width: 196px;
+    height: 43px;
+    left: 57px;
+    top: 180px;
+    background: #BD80E1;
+    border-radius: 30px;
+}
+
+.emoji {
+    position: absolute;
+    left: 35%;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+}
+
+.numero {
+    position: absolute;
+    left: 55%;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    color: #FFFFFF;
+}
+
+.curtir {
+    position: absolute;
+    width: 196px;
+    height: 43px;
+    left: 287px;
+    top: 180px;
+    background: #68B7DE;
+    border-radius: 30px;
+}
+
+.interessante {
+    position: absolute;
+    width: 196px;
+    height: 43px;
+    left: 517px;
+    top:180px;
+    background: #CCB469;
+    border-radius: 30px;
+}

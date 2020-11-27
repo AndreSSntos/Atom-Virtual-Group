@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atom | Cadastro</title>
+    <link rel="icon" href="img/logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/cadastro.css">
+
+</head>
+
+<body>
+    <div id="voltar">
+
+
+        <a href="index.html"><span id="atom">Atom</span></a>
+    </div>
+   
+    <div class="contato">
+        <div class="container">
+            
+    <div id="linha"></div>
+    <h2>Entre!</h2>
+
+            <div class="formulario">
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    <label for="nome" id="nomel">Nome e sobrenome:</label>
+                    <input type="text" name="nome" class="input-padrao" autofocus="autofocus"
+                        placeholder="Nome completo" required minlength="4">
+                    <label for="login" id="loginl">Login:</label>
+                    <input type="text" name="login" class="input-padrao" placeholder="Usuário para login" required
+                        minlength="4">
+                    <label for="senha" id="senhal">Senha:</label>
+                    <input type="password" name="senha" class="input-padrao" placeholder="**********" required
+                        minlength="4">
+
+                    <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
+                </form>
+                <img src="img/carregando.gif" id="img_aguarde" style="display: none;" width="100px">
+    
+                <div id="div_erro" style="background-color: #bf8899; color: maroon; display: none;">
+                    Erro no cadastro
+                </div>
+            </div>
+            <div class="imagem-lateral">
+                <img src="img/quote.jpg">
+            </div>
+            </div>
+        </div>
+        <img src="img/cadastro.png" alt="" id="cadastroimg">
+
+
+</body>
+
+</html>
+<script>
+
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display = 'none';
+        div_erro.style.display = 'block';
+    }
+
+</script>

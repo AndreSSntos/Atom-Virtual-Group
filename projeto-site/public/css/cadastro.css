@@ -1,0 +1,268 @@
+body {
+    position: relative;
+    width: 1152px;
+    height: 652px;
+    background: linear-gradient(180deg, #8A2BE2, #020202 87.63%);
+    font-family: 'Fredoka One', cursive;
+}
+
+#voltar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 189px;
+    top: 32px;
+}
+
+.container {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 600px;
+    top: 80px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #000000 0%, #8A2BE2 90.62%);
+    
+}
+
+#atom {
+    position: absolute;
+    width: 82px;
+    height: 36px;
+    left: 805px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+#cadastro {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: 170px;
+    top: 120px;
+}
+
+#linha {
+    position: absolute;
+    width: 85px;
+    height: 7px;
+    left: 79px;
+    top: 40px;
+    background: #FFFFFF;
+}
+
+
+
+#nomel {
+ 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#loginl {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+#entre {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+#senhal {
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#senhainp {
+    position: absolute;
+    width: 434px;
+    height: 42px;
+    left: 75px;
+    top: 260px;
+    font-family: Fredoka One;
+    color: #FFFFFF;
+    background: #1C1C1C;
+    border-radius: 20px;
+}
+
+#esqueceu {
+    position: absolute;
+    width: 372px;
+    height: 19px;
+    left: 119px;
+    top: 320px;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+#esque {
+    position: absolute;
+    top: 320px;
+    left: 85px;
+    color: #000000;
+}
+
+#cadastrando {
+    position: absolute;
+    width: 203px;
+    height: 70px;
+    left: 195px;
+    top: 409px;
+    color: #FFFFFF;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    background: #1C1C1C;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* PÁGINA DO CONTATO */
+
+
+#cadastroimg{
+    position: absolute;
+    left: 200px;
+    top: 80px;
+    width: 450px;
+    height: 450px;
+}
+
+
+.contato h1 {
+    padding: 5px 0;
+    color: #FFFFFF;
+    margin-left: 50px;
+  
+}
+
+.formulario {
+    float: left;
+    width: 500px;
+}
+
+form label, form p {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+h2 {
+    margin-left: 180px;
+    margin-top: 30px;
+    width: 66px;
+    height: 24px;
+    left: 180px;
+    top: 15px;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.btn {
+    position: absolute;
+    left: 150px;
+    color: white;
+    background-color: #1c1c1c;
+    margin: 20px 0 50px 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    float: left;
+    cursor: pointer;
+    width: 203px;
+height: 70px;
+font-size: 20px;
+    font-family: Fredoka One;
+}
+
+.imagem-lateral {
+    overflow: auto;
+}
+
+.contato img {
+    float: right;
+    width: 85%;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 70%;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: Fredoka One;
+    background: #1C1C1C;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+
+.div-radio {
+    margin-bottom: 30px;
+}
+
+/* PÁGINA DO LOGIN */
+
+.pag-login {
+    background-color: #F8FCFFbe;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.pag-login h1 {
+    margin-bottom: 40px;
+}
+
+.pag-login .input-padrao {
+    width: 50%;
+    display: inline;
+}
+
+.box-login {
+    display: inline-block;
+    background-color: white;
+    box-shadow: 3px 3px 5px 2px #ccc;
+    padding: 60px 20px 0px 20px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.pag-login .btn {
+    display: block;
+    float: none;
+    margin: auto;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/paginainicial.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <title>Atom | Virtual Group</title>
+    <link rel="icon" href="img/logo.ico">
+</head>
+<script>
+    
+let usuario;
+
+verificar_autenticacao();
+
+
+</script>
+<body onload="verificar_autenticacao()">
+    <div class="header">
+        <a href="paginainicial.html"><img src="img/logo.png" alt="" id="logo"></a>
+        <ul>
+            <a href="paginainicial.html">
+                <li><img src="img/casa.png" alt="" id="casa"></li>
+            </a>
+            <a href="perfil.html">
+                <li><img src="img/perfil.png" alt="" id="perfil"></li>
+            </a>
+            <a href="comunidades.html">
+                <li><img src="img/aviao.png" alt="" id="aviao"></li>
+            </a>
+        </ul>
+        <div id="barra"></div>
+        <a href="" onclick="logoff()">
+            <h2 id="sair">Sair</h2>
+        </a>
+        <hr>
+    </div>
+
+    <div class="container">
+        <h1 id="usuario">Olá<b id="b_usuario"></b>, pronto para evoluir?</h1>
+        <div class="postagens">
+            <div id="postagem1">
+                <div id="headerfoto" class="headerfoto"><img src="img/avatar1.png" alt="" class="avatar"></div>
+                <h2 id="nome1" class="nome">André</h2>
+                <h2 id="data1" class="data">19 Aug</h2>
+                <img src="img/verificacao.png" alt="" id="verfificacao" class="verificacao">
+                <h3 id="arroba1" class="arroba">@andresantos</h3>
+                <div class="pub"></textarea></div>
+                <a href=""><div class="amei"><img src="img/amei.png" alt="" class="emoji"> <span class="numero">1.8k</span></div></a>
+                <a href=""><div class="curtir"><img src="img/curtida.png" alt="" class="emoji"> <span class="numero">600</span></div></a>
+                <a href=""><div class="interessante"><img src="img/interessante.png" alt="" class="emoji"> <span class="numero">1.8k</span></div></a>
+            </div>
+
+            <div class="postagem2">
+
+            </div>
+
+        </div>
+        <div class="outros">
+            <a href="perfil.html"><div id="perfilavatar"><img src="img/avatar2.png" alt="" class="avatar"></a></div>
+            <a href="perfil.html"><h2 id="nomepropio">Frizza</h2></a>
+            <img src="img/verificacao.png" alt="" id="verificacaopropia" >
+            <a href="perfil.html"><h3  id="arrobapropio">@Claudiofrizza</h3></a>
+            <div class="sugestao">
+                <div>
+                    <h1 class="nomesug">FL Studio</h1>
+                <a href="comunidadep2.html"><div class="button"><img src="img/aviao.png" alt=""></div></a>
+            </div>
+            <div>
+                <h1  class="nomesug">Bandtec</h1>
+                <a href="comunidadeprog2.html"><div class="button1"><img src="img/aviao.png" alt=""></div></a>
+            </div>
+            <div>
+             <h1 class="nomesug">Youtube</h1>
+                <a href="comunidadea2.html"><div class="button2"><img src="img/aviao.png" alt=""></div></a>
+               </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

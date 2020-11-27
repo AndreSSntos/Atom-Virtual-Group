@@ -1,0 +1,132 @@
+* {
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    position: relative;
+    width: 1152px;
+    height: 700px;
+    background: rgba(0, 0, 0, 0.93);
+}
+
+.header {
+    position: fixed;
+}
+
+.header ul li {
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+}
+
+#logo {
+    position: absolute;
+    left: 47px;
+    top: 13px;
+    width: 100px;
+    height: 100px;
+}
+
+#casa {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 40px;
+    top: 157px;
+}
+
+#perfil {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 40px;
+    top: 276px;
+}
+
+#aviao {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 40px;
+    top: 388px;
+}
+
+hr {
+    position: absolute;
+    width: 768px;
+    height: 0px;
+    left: -180px;
+    top: 350px;
+    border: 1px solid rgba(28, 28, 28, 0.86);
+    transform: rotate(90deg);
+}
+
+#sair {
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+    width: 43px;
+    height: 18px;
+    left: 80px;
+    top: 613px;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+#barra {
+    position: absolute;
+    width: 5px;
+    height: 56px;
+    left: 198px;
+    top: 395px;
+    background: #8A2BE2;
+    border-radius: 20px;
+}
+
+.capa {
+    position: absolute;
+    width: 876px;
+    height: 143px;
+    left: 308px;
+    top: 63px;
+    background: #212424;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size:35px;
+}
+
+#textvid {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+
+#musica {
+    transform: rotate(42.59deg);
+    position: absolute;
+    left: 740px;
+    top: -30px;
+}
+
+.grupo {
+    position: absolute;
+    width: 283px;
+    height: 46px;
+    left: 371px;
+    top: 236px;
+    background: #212424;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+#nome{
+    color: #FFFFFF;
+    position: absolute;
+    left: 85px;
+    top: -20px;
+font-size: 30px;
+}

@@ -1,0 +1,112 @@
+  <!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atom | Login</title>
+  <link rel="icon" href="img/logo.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+  <div id="voltar">
+    <a href="index.html"><span id="atom">Atom</span></a>
+  </div>
+
+  <div class="pag-login">
+    <div class="container">
+        <div class="box-login">
+            <h1>Login</h1>
+
+  <form id="form_login" method="post" onsubmit="return entrar()">
+
+
+    <div id="linha"></div>
+    <h2>Entre!</h2>
+
+   
+    <span id="Cadastre-se"> Não tem um login? <a href="cadastro.html" id="cadas"><u> Cadastre-se agora!</u></a></span>
+
+    <label for="login" id="inputt">Email:</label>
+    <input type="text" class="input-padrao" name="login">
+
+
+    <label for="senha" id="inputt">Senha:</label>
+     <input type="password" class="input-padrao" name="senha">
+
+     <button id="btn_entrar" class="btn">Login</button>
+    </form>
+    <div class="extra">
+      <div id="div_erro" class="msg_erro">
+      </div>
+
+      <img src="img/carregando.gif" id="img_aguarde" style="display: none;">
+      
+  </div>
+
+    <span id="esqueceu">Esqueceu sua senha?<a href="esqueceu.html" id="esque"><u> Clique aqui!</u></a></span>
+
+
+ 
+
+    <img id="conversa" src="img/conversa.png" alt="">
+  </div>
+</div>
+</div>
+
+
+</body>
+
+</html>
+<script>
+
+  function entrar() {
+      aguardar();
+      var formulario = new URLSearchParams(new FormData(form_login));
+      fetch("/usuarios/autenticar", {
+          method: "POST",
+          body: formulario
+      }).then(resposta => {
+
+          if (resposta.ok) {
+
+              resposta.json().then(json => {
+
+                  sessionStorage.login_usuario_meuapp = json.login;
+                  sessionStorage.nome_usuario_meuapp = json.nome;
+
+                  window.location.href ='escolher.html';
+              });
+
+          } else {
+
+              console.log('Erro de login!');
+
+              resposta.text().then(texto => {
+                  console.error(texto);
+                  finalizar_aguardar(texto);
+              });
+          }
+      });
+
+      return false;
+  }
+
+  function aguardar() {
+      btn_entrar.disabled = true;
+      img_aguarde.style.visibility = 'visible';
+      div_erro.style.visibility = 'hidden';
+  }
+
+  function finalizar_aguardar(resposta) {
+      btn_entrar.disabled = false;
+      img_aguarde.style.visibility = 'hidden';
+      div_erro.style.visibility = 'visible';
+      div_erro.innerHTML = resposta;
+  }
+
+</script>
