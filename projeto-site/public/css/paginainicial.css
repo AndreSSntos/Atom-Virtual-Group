@@ -109,6 +109,19 @@ hr {
     color: #FFFFFF;
 }
 
+
+#postagem2 {
+    position: absolute;
+    width: 774px;
+    height: 317px;
+    top: 348px;
+    background: rgba(138, 43, 226, 0.67);
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+
+
 #headerfoto {
     position: absolute;
     width: 78px;
@@ -174,6 +187,13 @@ hr {
     background: #1C1C1C;
     color: #FFFFFF;
     border-radius: 20px;
+}
+
+#textpub{
+    position: absolute;
+    width: 675px;
+    top: 10px;
+    margin-left: 20px;
 }
 
 .amei {
@@ -255,13 +275,14 @@ hr {
 #nomepropio {
     position: absolute;
     top: 100px;
-    left: 45px;
+    left: 55px;
     text-align: center;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 18px;
     color: #FFFFFF;
+    
 }
 
 #verificacaopropia {

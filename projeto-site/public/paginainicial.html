@@ -47,11 +47,15 @@
         <h1 id="usuario">Olá <b id="b_usuario"></b>, pronto para evoluir?</h1>
         <div class="postagens">
             <div id="postagem1">
-                <div id="headerfoto" class="headerfoto"><img src="img/avatar1.png" alt="" class="avatar"></div>
+                <div id="headerfoto" class="headerfoto"><img src="img/avatar2.png" alt="" class="avatar"></div>
                 <h2 id="nome1" class="nome">André</h2>
-                <h2 id="data1" class="data">19 Aug</h2>
+                <h2 id="data1" class="data">30 nov</h2>
                 <h3 id="arroba1" class="arroba">@andresantos</h3>
-                <div class="pub"></textarea></div>
+                <div class="pub"><span id="textpub">Olá seja bem vindo! Essa é uma rede social diferente, onde você e seus amigos
+                    podem conversar, compartilhar ideias e aprender muito! Aqui na sua esquerda existe 3 espaços onde você pode 
+                    se divertir muito, a home é onde todos os alertar e novidades, você verá por aqui! Já no perfil é o seu espaço
+                    , compartilhe sua ideias seja do que for. No avião voce pode entrar em uma comunidade, aprender ou ensinar!
+                </span></div>
                 
                     <button onclick="clicar()" class="amei"><img src="img/amei.png" alt="" class="emoji"> <div id="num1" class="numero">0</div>
                     </button>
@@ -63,14 +67,30 @@
               
             </div>
 
-            <div class="postagem2">
-
+            <div id="postagem2">
+                <div id="headerfoto" class="headerfoto"><img src="img/avatar7.png" alt="" class="avatar"></div>
+                <h2 id="nome1" class="nome">Giovanna</h2>
+                <h2 id="data1" class="data">30 nov</h2>
+                <h3 id="arroba1" class="arroba">@Giovanna</h3>
+                <div class="pub"><span id="textpub">Esses três botões aqui em baixo é a sua avaliação. É muito importante saber o que você achou
+                    para sempre te trazermos as melhores ideias! O principio dessa rede é se conectar, ser feliz e mudar de vida,
+                    ela é feita para você, então cuide dela! Let's play!
+                </span></div>
+                
+                    <button onclick="clicar4()" class="amei"><img src="img/amei.png" alt="" class="emoji"> <div id="num4" class="numero">0</div>
+                    </button>
+           
+                    <button onclick="clicar5()" class="curtir"><img src="img/curtida.png" alt="" class="emoji"><div id="num5" class="numero">0</div>
+                    </button>
+               
+                    <button  onclick="clicar6()" class="interessante"><img src="img/interessante.png" alt="" class="emoji"> <div id="num6" class="numero">0</div></button>
+              
             </div>
 
         </div>
         <div class="outros">
             <a href="perfil.html">
-                <div id="perfilavatar"><img src="img/avatar2.png" alt="" class="avatar">
+                <div id="perfilavatar"><img src="img/avatarmonster.png" alt="" class="avatar">
             </a></div>
         <a href="perfil.html">
             <h2 id="nomepropio"><b id="b2_usuario"></b></h2>
@@ -81,37 +101,37 @@
             <div>
                 <h1 class="nomesug">FL Studio</h1>
                 <a href="comunidadep2.html">
-                    <div class="div"><img src="img/aviao.png" alt=""></div>
+                    <div class="div"><img src="img/mais.png" alt=""></div>
                 </a>
             </div>
             <div>
                 <h1 class="nomesug">Bandtec</h1>
                 <a href="comunidadeprog2.html">
-                    <div class="div1"><img src="img/aviao.png" alt=""></div>
+                    <div class="div1"><img src="img/mais.png" alt=""></div>
                 </a>
             </div>
             <div>
                 <h1 class="nomesug">Youtube</h1>
                 <a href="comunidadea2.html">
-                    <div class="div2"><img src="img/aviao.png" alt=""></div>
+                    <div class="div2"><img src="img/mais.png" alt=""></div>
                 </a>
             </div>
             <div>
                 <h1 class="nomesug">Tomorrow</h1>
                 <a href="comunidadep3.html">
-                    <div class="div3"><img src="img/aviao.png" alt=""></div>
+                    <div class="div3"><img src="img/mais.png" alt=""></div>
                 </a>
             </div>
             <div>
                 <h1 class="nomesug">Apple</h1>
                 <a href="comunidadeprog3.html">
-                    <div class="div4"><img src="img/aviao.png" alt=""></div>
+                    <div class="div4"><img src="img/mais.png" alt=""></div>
                 </a>
             </div>
             <div>
                 <h1 class="nomesug">Premiere</h1>
                 <a href="comunidadea3.html">
-                    <div class="div5"><img src="img/aviao.png" alt=""></div>
+                    <div class="div5"><img src="img/mais.png" alt=""></div>
                 </a>
             </div>
         </div>
@@ -174,4 +194,49 @@
     }
 
 
+function clicar4() {
+
+if (vezes <= 0) {
+vezes++;
+num4.innerHTML = vezes;
+
+} else if (vezes = 1) {
+vezes--;
+num4.innerHTML = vezes;
+num5.innerHTML = vezes;
+num6.innerHTML = vezes;
+
+}
+
+}
+
+function clicar5() {
+
+if (vezes <= 0) {
+vezes++;
+num5.innerHTML = vezes;
+
+
+} else if (vezes = 1) {
+vezes--;
+num5.innerHTML = vezes;
+num4.innerHTML = vezes;
+num6.innerHTML = vezes;
+}
+
+}
+
+function clicar6() {
+
+if (vezes <= 0) {
+vezes++;
+num6.innerHTML = vezes;
+
+} else if (vezes = 1) {
+vezes--;
+num6.innerHTML = vezes;
+num5.innerHTML = vezes;
+num4.innerHTML = vezes;
+}
+}
 </script>
