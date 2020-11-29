@@ -145,7 +145,28 @@ hr {
     top: 65px;
     background: #1C1C1C;
     color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 15px;
+}
+#conteudopost{
+    position: absolute;
+    left: 30px;
+    color: #FFFFFF;
+}
+
+#conteudopostdois{
+    position: absolute;
+    left: 30px;
+    color: #FFFFFF;
+}
+#conteudoposttres{
+    position: absolute;
+    left: 30px;
+    color: #FFFFFF;
+}
+#conteudopostquatro{
+    position: absolute;
+    left: 30px;
+    color: #FFFFFF;
 }
 
 #postar{
@@ -160,6 +181,40 @@ hr {
     height:  40px;
 }
 
+#postardois{
+    border-radius: 20px;
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: absolute;
+    left: 750px;
+    top: 250px;
+    width: 100px;
+    height:  40px;
+}
+#postartres{
+    border-radius: 20px;
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: absolute;
+    left: 750px;
+    top: 250px;
+    width: 100px;
+    height:  40px;
+}
+
+#postarquatro{
+    border-radius: 20px;
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: absolute;
+    left: 750px;
+    top: 250px;
+    width: 100px;
+    height:  40px;
+}
 .post {
     position: absolute;
     width: 815px;
@@ -170,11 +225,7 @@ hr {
     border-radius: 30px;
 }
 
-#conteudopost{
-    position: absolute;
-    left: 30px;
-    color: #FFFFFF;
-}
+
 
 
 .amei {

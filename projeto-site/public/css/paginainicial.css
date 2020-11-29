@@ -89,7 +89,7 @@ hr {
 
 #usuario {
     position: absolute;
-    left: 400px;
+    left: 250px;
     top: 30px;
     color: #FFFFFF;
     font-size: 30px;
@@ -254,10 +254,12 @@ hr {
 
 #nomepropio {
     position: absolute;
-    top: 80px;
-    left: 75px;
+    top: 100px;
+    left: 45px;
+    text-align: center;
     font-style: normal;
     font-weight: normal;
+    font-size: 20px;
     line-height: 18px;
     color: #FFFFFF;
 }
@@ -288,12 +290,12 @@ hr {
     border-radius: 20px;
 }
 
-.button {
+.div {
     position: absolute;
     width: 35px;
     height: 36px;
     left: 170px;
-    top: 25px;
+    top: 35px;
     background: #1c1c1c;
     border-radius: 10px;
 }
@@ -306,22 +308,50 @@ hr {
 
 
 
-.button1 {
+.div1 {
     position: absolute;
     width: 35px;
     height: 36px;
     left: 170px;
-    top: 85px;
+    top:105px;
     background: #1c1c1c;
     border-radius: 10px;
 }
 
-.button2 {
+.div2 {
     position: absolute;
     width: 35px;
     height: 36px;
     left: 170px;
-    top: 145px;
+    top: 175px;
+    background: #1c1c1c;
+    border-radius: 10px;
+}
+.div3 {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    left: 170px;
+    top:245px;
+    background: #1c1c1c;
+    border-radius: 10px;
+}
+
+.div4 {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    left: 170px;
+    top: 315px;
+    background: #1c1c1c;
+    border-radius: 10px;
+}
+.div5 {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    left: 170px;
+    top: 385px;
     background: #1c1c1c;
     border-radius: 10px;
 }

@@ -111,12 +111,23 @@ hr {
     left: 700px;
     top: -30px;
 }
-
 .grupo {
     position: absolute;
     width: 283px;
     height: 46px;
-    left: 371px;
+    left: 400px;
+    top: 236px;
+    background: #212424;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+
+.grupo2 {
+    position: absolute;
+    width: 283px;
+    height: 46px;
+    left: 730px;
     top: 236px;
     background: #212424;
     border-radius: 20px;
@@ -127,6 +138,6 @@ hr {
     color: #FFFFFF;
     position: absolute;
     left: 75px;
-    top: -20px;
-    font-size: 30px;
+    top: -15px;
+    font-size: 25px;
 }

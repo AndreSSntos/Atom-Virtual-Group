@@ -32,7 +32,7 @@
     <span id="Cadastre-se"> Não tem um login? <a href="cadastro.html" id="cadas"><u> Cadastre-se agora!</u></a></span>
 
     <label for="login" id="inputt">Email:</label>
-    <input type="text" class="input-padrao" name="login">
+    <input type="text" class="input-padrao" name="email">
 
 
     <label for="senha" id="inputt">Senha:</label>
@@ -44,7 +44,7 @@
       <div id="div_erro" class="msg_erro">
       </div>
 
-      <img src="img/carregando.gif" id="img_aguarde" style="display: none;">
+      <!-- <img src="img/carregando.gif" id="img_aguarde" > -->
       
   </div>
 
@@ -79,7 +79,7 @@
                   sessionStorage.login_usuario_meuapp = json.login;
                   sessionStorage.nome_usuario_meuapp = json.nome;
 
-                  window.location.href ='escolher.html';
+                  window.location.href ='paginainicial.html';
               });
 
           } else {
@@ -98,15 +98,15 @@
 
   function aguardar() {
       btn_entrar.disabled = true;
-      img_aguarde.style.visibility = 'visible';
-      div_erro.style.visibility = 'hidden';
+      // img_aguarde.style.visibility = 'visible';
+      // div_erro.style.visibility = 'hidden';
   }
 
   function finalizar_aguardar(resposta) {
       btn_entrar.disabled = false;
-      img_aguarde.style.visibility = 'hidden';
-      div_erro.style.visibility = 'visible';
-      div_erro.innerHTML = resposta;
+      // img_aguarde.style.visibility = 'hidden';
+      // div_erro.style.visibility = 'visible';
+      // div_erro.innerHTML = resposta;
   }
 
 </script>

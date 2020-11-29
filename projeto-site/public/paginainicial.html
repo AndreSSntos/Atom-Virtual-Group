@@ -9,15 +9,17 @@
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <title>Atom | Virtual Group</title>
     <link rel="icon" href="img/logo.ico">
+    <script type="text/javascript" src="funcoes.js"></script>
 </head>
 <script>
-    
-let usuario;
 
-verificar_autenticacao();
+    let usuario;
+
+    verificar_autenticacao();
 
 
 </script>
+
 <body onload="verificar_autenticacao()">
     <div class="header">
         <a href="paginainicial.html"><img src="img/logo.png" alt="" id="logo"></a>
@@ -39,19 +41,26 @@ verificar_autenticacao();
         <hr>
     </div>
 
+
+
     <div class="container">
-        <h1 id="usuario">Olá<b id="b_usuario"></b>, pronto para evoluir?</h1>
+        <h1 id="usuario">Olá <b id="b_usuario"></b>, pronto para evoluir?</h1>
         <div class="postagens">
             <div id="postagem1">
                 <div id="headerfoto" class="headerfoto"><img src="img/avatar1.png" alt="" class="avatar"></div>
                 <h2 id="nome1" class="nome">André</h2>
                 <h2 id="data1" class="data">19 Aug</h2>
-                <img src="img/verificacao.png" alt="" id="verfificacao" class="verificacao">
                 <h3 id="arroba1" class="arroba">@andresantos</h3>
                 <div class="pub"></textarea></div>
-                <a href=""><div class="amei"><img src="img/amei.png" alt="" class="emoji"> <span class="numero">1.8k</span></div></a>
-                <a href=""><div class="curtir"><img src="img/curtida.png" alt="" class="emoji"> <span class="numero">600</span></div></a>
-                <a href=""><div class="interessante"><img src="img/interessante.png" alt="" class="emoji"> <span class="numero">1.8k</span></div></a>
+                
+                    <button onclick="clicar()" class="amei"><img src="img/amei.png" alt="" class="emoji"> <div id="num1" class="numero">0</div>
+                    </button>
+           
+                    <button onclick="clicar1()" class="curtir"><img src="img/curtida.png" alt="" class="emoji"><div id="num2" class="numero">0</div>
+                    </button>
+               
+                    <button  onclick="clicar2()" class="interessante"><img src="img/interessante.png" alt="" class="emoji"> <div id="num3" class="numero">0</div></button>
+              
             </div>
 
             <div class="postagem2">
@@ -60,27 +69,109 @@ verificar_autenticacao();
 
         </div>
         <div class="outros">
-            <a href="perfil.html"><div id="perfilavatar"><img src="img/avatar2.png" alt="" class="avatar"></a></div>
-            <a href="perfil.html"><h2 id="nomepropio">Frizza</h2></a>
-            <img src="img/verificacao.png" alt="" id="verificacaopropia" >
-            <a href="perfil.html"><h3  id="arrobapropio">@Claudiofrizza</h3></a>
-            <div class="sugestao">
-                <div>
-                    <h1 class="nomesug">FL Studio</h1>
-                <a href="comunidadep2.html"><div class="button"><img src="img/aviao.png" alt=""></div></a>
+            <a href="perfil.html">
+                <div id="perfilavatar"><img src="img/avatar2.png" alt="" class="avatar">
+            </a></div>
+        <a href="perfil.html">
+            <h2 id="nomepropio"><b id="b2_usuario"></b></h2>
+        </a>
+        
+
+        <div class="sugestao">
+            <div>
+                <h1 class="nomesug">FL Studio</h1>
+                <a href="comunidadep2.html">
+                    <div class="div"><img src="img/aviao.png" alt=""></div>
+                </a>
             </div>
             <div>
-                <h1  class="nomesug">Bandtec</h1>
-                <a href="comunidadeprog2.html"><div class="button1"><img src="img/aviao.png" alt=""></div></a>
+                <h1 class="nomesug">Bandtec</h1>
+                <a href="comunidadeprog2.html">
+                    <div class="div1"><img src="img/aviao.png" alt=""></div>
+                </a>
             </div>
             <div>
-             <h1 class="nomesug">Youtube</h1>
-                <a href="comunidadea2.html"><div class="button2"><img src="img/aviao.png" alt=""></div></a>
-               </div>
+                <h1 class="nomesug">Youtube</h1>
+                <a href="comunidadea2.html">
+                    <div class="div2"><img src="img/aviao.png" alt=""></div>
+                </a>
             </div>
+            <div>
+                <h1 class="nomesug">Tomorrow</h1>
+                <a href="comunidadep3.html">
+                    <div class="div3"><img src="img/aviao.png" alt=""></div>
+                </a>
+            </div>
+            <div>
+                <h1 class="nomesug">Apple</h1>
+                <a href="comunidadeprog3.html">
+                    <div class="div4"><img src="img/aviao.png" alt=""></div>
+                </a>
+            </div>
+            <div>
+                <h1 class="nomesug">Premiere</h1>
+                <a href="comunidadea3.html">
+                    <div class="div5"><img src="img/aviao.png" alt=""></div>
+                </a>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </body>
 
 </html>
+
+<script>
+       vezes = 0;
+   
+
+  function clicar() {
+ 
+        if(vezes <= 0){
+            vezes++;
+            num1.innerHTML = vezes;
+     
+        }else if(vezes = 1){
+            vezes --;
+            num1.innerHTML = vezes;
+            num2.innerHTML = vezes;
+            num3.innerHTML = vezes;
+
+        }
+      
+    }
+
+  function clicar1() {
+ 
+        if(vezes <= 0){
+            vezes++;
+            num2.innerHTML = vezes;
+            
+     
+        }else if(vezes = 1){
+            vezes --;
+            num2.innerHTML = vezes;
+            num1.innerHTML = vezes;
+            num3.innerHTML = vezes;
+        }
+      
+    }
+
+ function clicar2() {
+ 
+        if(vezes <= 0){
+            vezes++;
+            num3.innerHTML = vezes;
+     
+        }else if(vezes = 1){
+            vezes --;
+            num3.innerHTML = vezes;
+            num2.innerHTML = vezes;
+            num1.innerHTML = vezes;
+        }
+      
+    }
+
+
+</script>

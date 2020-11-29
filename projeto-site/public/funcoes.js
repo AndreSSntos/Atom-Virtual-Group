@@ -1,6 +1,7 @@
 let login_usuario;
 let nome_usuario;
 
+
 function redirecionar_login() {
     window.location.href = 'login.html';
 }
@@ -13,10 +14,15 @@ function verificar_autenticacao() {
         redirecionar_login();
     } else {
         b_usuario.innerHTML = nome_usuario;
+        b2_usuario.innerHTML = nome_usuario;
+        btres_usuario.innerHTML = nome_usuario;
+        
         validar_sessao();
     }
     
 }
+
+
 
 function logoff() {
     finalizar_sessao();

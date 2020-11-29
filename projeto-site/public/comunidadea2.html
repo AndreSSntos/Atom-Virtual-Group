@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/comunidadea2.css">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <script type="text/javascript" src="funcoes.js"></script>
     <title>Atom | Virtual Group</title>
     <link rel="icon" href="img/logo.ico">
 </head>
@@ -37,25 +38,363 @@
                 <img src="img/video.png" alt="" id="musica">
            </div>
         <div id="perfilavatar"><img src="img/video.png" alt="" class="avatar"></div>
-        <h1 id="nome">FL Studio</h1>      
+        <h1 id="nome">Youtube</h1>      
        
 
         <div class="postagens">
             <div class="fazerpostagem">
-                <textarea name="" id="" cols="30" rows="10" id="pub" class="pub"></textarea>
-                <button type="submit" id="postar">Publicar</button>
+                <textarea name="" cols="30" rows="10" id="pub" class="pub"></textarea>
+                <button type="submit" id="postar" onclick="publicar()">Publicar</button>
+                <button type="submit" id="postardois" onclick="publicardois()" style="display: none;">Publicar</button>
+                <button type="submit" id="postartres" onclick="publicartres()" style="display: none;">Publicar</button>
+                <button type="submit" id="postarquatro" onclick="publicarquatro()" style="display: none;">Publicar</button>
             </div>
             <h1 id="postagens">Postagens:</h1>
-            <div class="post">
+            <div id="postag" class="post" style="display: none;">
                 <h3 id="conteudopost"></h3>
-                <a href=""><div class="amei"><img src="img/amei.png" alt="" class="emoji"> <span class="numero">1.8k</span></div></a>
-                <a href=""><div class="curtir"><img src="img/curtida.png" alt="" class="emoji"> <span class="numero">600</span></div></a>
-                <a href=""><div class="interessante"><img src="img/interessante.png" alt="" class="emoji"> <span class="numero">1.8k</span></div></a>
+                <button onclick="clicar()" class="amei"><img src="img/amei.png" alt="" class="emoji">
+                    <div id="num1" class="numero">0</div>
+                </button>
+
+                <button onclick="clicar1()" class="curtir"><img src="img/curtida.png" alt="" class="emoji">
+                    <div id="num2" class="numero">0</div>
+                </button>
+
+                <button onclick="clicar2()" class="interessante"><img src="img/interessante.png" alt=""
+                        class="emoji">
+                    <div id="num3" class="numero">0</div>
+                </button>
+            </div>
+
+
+
+            <div id="postagdois" class="post" style="display: none;">
+                <h3 id="conteudopostdois"></h3>
+                <button onclick="clicar4()" class="amei"><img src="img/amei.png" alt="" class="emoji">
+                    <div id="num4" class="numero">0</div>
+                </button>
+
+                <button onclick="clicar5()" class="curtir"><img src="img/curtida.png" alt="" class="emoji">
+                    <div id="num5" class="numero">0</div>
+                </button>
+
+                <button onclick="clicar6()" class="interessante"><img src="img/interessante.png" alt=""
+                        class="emoji">
+                    <div id="num6" class="numero">0</div>
+                </button>
+            </div>
+
+
+
+            <div id="postagtres" class="post" style="display: none;">
+                <h3 id="conteudoposttres"></h3>
+                <button onclick="clicar7()" class="amei"><img src="img/amei.png" alt="" class="emoji">
+                    <div id="num7" class="numero">0</div>
+                </button>
+
+                <button onclick="clicar8()" class="curtir"><img src="img/curtida.png" alt="" class="emoji">
+                    <div id="num8" class="numero">0</div>
+                </button>
+
+                <button onclick="clicar9()" class="interessante"><img src="img/interessante.png" alt=""
+                        class="emoji">
+                    <div id="num9" class="numero">0</div>
+                </button>
+            </div>
+
+
+
+
+            <div id="postagquatro" class="post" style="display: none;">
+                <h3 id="conteudopostquatro"></h3>
+                <button onclick="clicar10()" class="amei"><img src="img/amei.png" alt="" class="emoji">
+                    <div id="num10" class="numero">0</div>
+                </button>
+
+                <button onclick="clicar11()" class="curtir"><img src="img/curtida.png" alt="" class="emoji">
+                    <div id="num11" class="numero">0</div>
+                </button>
+
+                <button onclick="clicar12()" class="interessante"><img src="img/interessante.png" alt=""
+                        class="emoji">
+                    <div id="num12" class="numero">0</div>
+                </button>
             </div>
         </div>
     </div>
-    </div>
-    </div>
+</div>
+</div>
 </body>
 
 </html>
+<script>
+vezes = 0;
+
+let posta = [];
+function publicar() {
+    if(pub.value ==  ""){
+        alert("Comente algo, seus amigos vão gostar!")
+    }else{
+    postag.style = "display: block;"
+    postagdois.style = "display: none;"
+    postagtres.style = "display: none;"
+    postagquatro.style = "display: none;"
+    posta.push(pub.value);
+    pub.value = '';
+
+    for (var contador = 0; contador < posta.length; contador++) {
+        conteudopost.innerHTML = `<br> ${posta[contador]}`;
+        postar.style = "display:none;"
+        postardois.style= "display:block;"
+
+    }
+}
+}
+function publicardois() {
+    if(pub.value ==  ""){
+        alert("Comente algo, seus amigos vão gostar!")
+    }else{
+    postagdois.style = "display: block;"
+    postag.style= "top:600px;"
+    posta.push(pub.value);
+    pub.value = '';
+
+    for (var contador = 0; contador < posta.length; contador++) {
+        conteudopostdois.innerHTML = `<br> ${posta[contador]}`;
+        postardois.style = "display:none;"
+        postartres.style= "display:block;"
+
+    }
+}
+}
+function publicartres() {
+    if(pub.value ==  ""){
+        alert("Comente algo, seus amigos vão gostar!")
+    }else{
+    postagtres.style = "display: block;"
+    postagdois.style = "top:600px;"
+    postag.style= "top:900px;"
+    posta.push(pub.value);
+    pub.value = '';
+
+    for (var contador = 0; contador < posta.length; contador++) {
+        conteudoposttres.innerHTML = `<br> ${posta[contador]}`;
+        postartres.style = "display:none;"
+        postarquatro.style= "display:block;"
+
+    }
+}
+}
+function publicarquatro() {
+    if(pub.value ==  ""){
+        alert("Comente algo, seus amigos vão gostar!")
+    }else{
+    postagquatro.style = "display: block;"
+    postagtres.style = "top:600px;"
+    postagdois.style= "top:900px;"
+    postag.style= "top:1200px;"
+    posta.push(pub.value);
+    pub.value = '';
+
+    for (var contador = 0; contador < posta.length; contador++) {
+        conteudopostquatro.innerHTML = `<br> ${posta[contador]}`;
+        postarquatro.style = "display: none;"
+        postar.style = "display: block;"
+        
+
+    }
+}
+}
+
+function clicar() {
+
+    if (vezes <= 0) {
+        vezes++;
+        num1.innerHTML = vezes;
+
+    } else if (vezes = 1) {
+        vezes--;
+        num1.innerHTML = vezes;
+        num2.innerHTML = vezes;
+        num3.innerHTML = vezes;
+
+    }
+
+}
+
+function clicar1() {
+
+    if (vezes <= 0) {
+        vezes++;
+        num2.innerHTML = vezes;
+
+
+    } else if (vezes = 1) {
+        vezes--;
+        num2.innerHTML = vezes;
+        num1.innerHTML = vezes;
+        num3.innerHTML = vezes;
+    }
+
+}
+
+function clicar2() {
+
+    if (vezes <= 0) {
+        vezes++;
+        num3.innerHTML = vezes;
+
+    } else if (vezes = 1) {
+        vezes--;
+        num3.innerHTML = vezes;
+        num2.innerHTML = vezes;
+        num1.innerHTML = vezes;
+    }
+
+}
+
+function clicar4() {
+
+if (vezes <= 0) {
+vezes++;
+num4.innerHTML = vezes;
+
+} else if (vezes = 1) {
+vezes--;
+num4.innerHTML = vezes;
+num5.innerHTML = vezes;
+num6.innerHTML = vezes;
+
+}
+
+}
+
+function clicar5() {
+
+if (vezes <= 0) {
+vezes++;
+num5.innerHTML = vezes;
+
+
+} else if (vezes = 1) {
+vezes--;
+num5.innerHTML = vezes;
+num4.innerHTML = vezes;
+num6.innerHTML = vezes;
+}
+
+}
+
+function clicar6() {
+
+if (vezes <= 0) {
+vezes++;
+num6.innerHTML = vezes;
+
+} else if (vezes = 1) {
+vezes--;
+num6.innerHTML = vezes;
+num5.innerHTML = vezes;
+num4.innerHTML = vezes;
+}
+
+}
+
+function clicar7() {
+
+if (vezes <= 0) {
+vezes++;
+num7.innerHTML = vezes;
+
+} else if (vezes = 1) {
+vezes--;
+num7.innerHTML = vezes;
+num8.innerHTML = vezes;
+num9.innerHTML = vezes;
+
+}
+
+}
+
+function clicar8() {
+
+if (vezes <= 0) {
+vezes++;
+num8.innerHTML = vezes;
+
+
+} else if (vezes = 1) {
+vezes--;
+num8.innerHTML = vezes;
+num7.innerHTML = vezes;
+num9.innerHTML = vezes;
+}
+
+}
+
+function clicar9() {
+
+if (vezes <= 0) {
+vezes++;
+num9.innerHTML = vezes;
+
+} else if (vezes = 1) {
+vezes--;
+num9.innerHTML = vezes;
+num8.innerHTML = vezes;
+num7.innerHTML = vezes;
+}
+
+}
+
+function clicar10() {
+
+if (vezes <= 0) {
+vezes++;
+num10.innerHTML = vezes;
+
+} else if (vezes = 1) {
+vezes--;
+num10.innerHTML = vezes;
+num11.innerHTML = vezes;
+num12.innerHTML = vezes;
+
+}
+
+}
+
+function clicar11() {
+
+if (vezes <= 0) {
+vezes++;
+num11.innerHTML = vezes;
+
+
+} else if (vezes = 1) {
+vezes--;
+num11.innerHTML = vezes;
+num10.innerHTML = vezes;
+num12.innerHTML = vezes;
+}
+
+}
+
+function clicar12() {
+
+if (vezes <= 0) {
+vezes++;
+num12.innerHTML = vezes;
+
+} else if (vezes = 1) {
+vezes--;
+num12.innerHTML = vezes;
+num11.innerHTML = vezes;
+num10.innerHTML = vezes;
+}
+
+}
+
+
+
+
+</script>
