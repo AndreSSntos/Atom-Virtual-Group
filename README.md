@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/BandTec/Vaccinus">
-    <img src="projeto-site/public/img/logo.png" alt="Logo" width="200" height="220">
+    <img src="projeto-site/public/img/logo.png" alt="Logo" width="300" height="300">
       <h3 align="center">ATOM | VIRTUAL GROUP</h3>
   </a>
 
@@ -19,7 +19,7 @@ A sua rede social preferida!
    A atom é uma rede social onde junta as melhores idéias e as melhores pessoas em prol de uma evolução compartilhada. Entre na sua comunidade preferida e se torne sua melhor versão!
   
   <p align="center">
-    <img src="projeto-site/img/print.png" alt="hld">
+    <img src="projeto-site/public/img/print.png" alt="hld">
   
 
 
