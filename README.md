@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/BandTec/Vaccinus">
-    <img src="projeto-site/img/logo.png" alt="Logo" width="200" height="220">
+    <img src="projeto-site/public/img/logo.png" alt="Logo" width="200" height="220">
       <h3 align="center">ATOM | VIRTUAL GROUP</h3>
   </a>
 
